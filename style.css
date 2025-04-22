@@ -1,0 +1,145 @@
+main{
+    width: 100vw;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+#header{
+   width: 95%;
+   margin: 0 auto 40px auto;
+}
+
+#h2-1{
+    color: hsl(212, 6%, 44%);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+#h2-2{
+    color: hsl(234, 12%, 34%);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+#p-1{
+    color: hsl(212, 6%, 44%);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.card{
+    width: 95%;
+    /* border: 1px solid black; */
+    margin: 0 auto 0 auto;
+}
+
+.smallcard1, .smallcard2, .smallcard3, .smallcard4{
+   border-radius: 10px;
+   margin-bottom: 20px;
+   border: 3px solid hsla(0, 0%, 0%, 0.03);
+}
+
+.hr-1{
+    color: hsl(180, 62%, 55%);
+    border: 2px solid hsl(180, 62%, 55%);
+}
+
+.hr-2{
+    color: hsl(0, 78%, 62%);
+    border: 2px solid hsl(0, 78%, 62%);
+}
+
+.hr-3{
+    color: hsl(34, 97%, 64%);
+    border: 2px solid hsl(34, 97%, 64%);
+}
+
+.hr-4{
+    color: hsl(212, 86%, 64%);
+    border: 2px solid hsl(212, 86%, 64%);
+}
+
+h3{
+  margin-left: 10px;
+  color: hsl(234, 12%, 34%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.p-one{
+    color: hsl(212, 6%, 44%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.img-1{
+    width: 18%;
+    margin-left: 75%;
+    margin-right: 25%;
+    margin-bottom: 10px;
+}
+
+@media (min-width:780px){
+   main{
+     width: 100vw;
+     font-size: 15px;
+     margin-bottom: 10px;
+    } 
+
+   .container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+   }
+
+   #header{
+      width: 42%;
+      padding: 1rem;
+   }
+
+   .card{
+     display: grid;
+     gap:1rem;
+     grid-template-columns: 25% 25% 25%;
+     grid-template-rows: 1fr 1fr;
+     justify-content: center;
+   }
+
+   .smallcard2{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    margin: 0;
+   }
+   .smallcard3{
+     grid-column: 2 / span 1;
+     grid-row: 2 / span 1;
+     margin: 0;
+   }
+
+   .smallcard1, .smallcard4{
+    transform: translateY(50%);
+   }
+}
